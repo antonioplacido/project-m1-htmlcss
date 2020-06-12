@@ -1,1 +1,200 @@
-/* CSS here :) */
+body{
+    margin: 0;
+    font-family: Poppins, sans-serif;
+
+}
+
+
+
+
+/*NAV BAR */
+.nav-across-options{
+    display: flex;
+    list-style: none;
+}
+
+.dropdown-options a{
+    text-decoration:none;
+}
+
+/*Features Section */
+
+.featurecontent{
+    display: flex;
+    text-align: center;
+    
+}
+
+.feature p{
+    height: 150px;
+    color: gray;
+}
+
+.feature{
+    width: 300px;
+    padding: 20px;
+    border:solid 1px lightgray;
+    margin: 15px;
+    border-radius: 15px;
+
+}
+
+.feature img{
+    height: 50px;
+}
+
+.feature header{
+    font-size: 20px;
+    font-weight: bold; 
+    padding: 20px;
+
+}
+
+@media (max-width:768px)
+{
+ /*   .gattopics img{
+        width: 100%;;
+    }*/
+    .featurecontent{
+    display: inline-block;
+    position: relative
+}
+}
+
+button.feature{
+    color:#3a3633;
+}
+
+
+
+/*LOREM IPSUM WITH GRADIENT BLOCK(S)*/
+
+.blocks{
+    color: white;
+}
+
+.blocks header{
+    font-size: 60px;
+}
+
+.gradientblock{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,110,176,0) 0%, rgba(1,74,181,1) 100%);
+}
+
+.gradientblock{
+    height: 600px;
+}
+
+.slickgradient{
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 50px;
+
+}
+
+slickgradient p{
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 50px;
+
+}
+
+
+.grayblock{
+    background-color: #3a3633;
+    height: 600px;
+}
+
+
+/* PICTURES GRID */
+
+.gattopics{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.gattopics img{
+    box-sizing: border-box;
+    padding: 0px;
+    width:calc(100%/3);
+}
+
+@media (max-width:768px)
+{
+    .gattopics img{
+        width: 100%;;
+    }
+    .gattopics{
+    display: inline-block;
+    font-size: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+.mailinginput{
+    padding-right: 40px;
+}
+
+.emailinput{
+    box-sizing: border-box;
+}
+
+.registeremail{
+    padding-bottom: 10px;
+}
+
+.mailingbox{
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.mailingbox img{
+    margin: 4px;
+}
+
+.checkboxinput{
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+
+input[type="email"] {
+    width: 200px; /* width of image */
+    height: 35px; /* height of image */
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.sendbutton{
+    background-color: gray;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.legal{
+    padding-top:100px;
+    border-top:solid 1px lightgray;
+}
+
+.legalclicks{ 
+    list-style: none;
+    display: flex;
+    display:inline-block;
+    width: 22%;
+    padding: 0 20px;
+}
+
+.legalclicks a{
+    text-decoration: none;
+    color: black;
+}
+
