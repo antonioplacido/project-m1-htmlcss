@@ -20,9 +20,62 @@ body{
 }
 
 /*BIG ROCKET BOY*/
+/*20px is good for the 2 paragrapjs*/
 
-.introduction{
-    background-image: url("bfr.jpeg");
+.centerpiece{
+    background-image: url(../imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}   
+
+.bothhalves{
+    display: flex;
+    padding:280px;
+    width: 768px;
+}
+
+.lefthalf{
+    font-size:40px;
+    text-align: left;
+    border-left: solid white 6px;
+    border-top: solid white 6px;
+    border-bottom: solid white 6px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.righthalf{
+    background-color: rgba(0,0,0,0.5);
+    border-right: solid white 6px;
+    border-top: solid white 6px;
+    border-bottom: solid white 6px;
+    text-align: left;
+}
+
+.topheader{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.bottomtext{
+    font-size: 10px;
+    display: flex;
+}
+.lefthalf{
+    font-size: 50px;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+
+.bottomtext p{
+    text-align: left;
+    padding: 20px;
+    border-top:1px dotted white;
 }
 
 /*Features Section */
@@ -63,7 +116,6 @@ body{
     font-size: 20px;
     font-weight: bold; 
     padding: 20px;
-
 }
 
 .allbuttons{
@@ -147,15 +199,6 @@ body{
     width:calc(100%/3);
 }
 
-
-
-
-
-
-
-
-
-
 .mailinginput{
     padding-right: 40px;
 }
@@ -235,3 +278,73 @@ input[type="email"] {
 }
 }
 
+@media (max-width:768px)
+{
+
+    .bothhalves{
+        font-size: 30px;    
+        padding: 0px;
+        display: inline-block;
+        text-align: left;
+        width: 768px;
+    }
+
+    .bottomtext p{
+        font-size: 20px;
+        padding-left: 20px;
+        border: none;
+    }
+    .lefthalf{
+        padding-bottom: 40px;
+        padding-left: 20px;
+    }
+
+    .topheader{
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width:768px)
+{
+    .centerpiece{
+        background-image: url(../imgs/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100px;
+        justify-content: center;
+
+}
+
+    .bottomtext{
+        font-size: 10px;
+        display: inline-block;
+}
+}
+
+@media (max-width:768px)
+{
+    .grayblock p{
+        font-size: 20px;
+        padding-left: 20px;
+}
+
+    .blocks header{
+        font-size: 30px;
+        padding-left: 20px;
+}
+
+    .gradientblock p{
+        padding-right: 20px;
+    }
+    .lefthalf{
+        border: none;
+        font-size: 30px;
+    }
+    .righthalf{
+        border:none;
+    }
+    .bottomtext p{
+        font-size: 15px;
+    }
+}
