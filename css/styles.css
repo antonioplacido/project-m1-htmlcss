@@ -1,26 +1,156 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body{
     margin: 0;
     font-family: Poppins, sans-serif;
-
 }
 
+.nav {
+padding: 10px;
+background-color: #3a3633;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
-/*NAV BAR */
-.nav-across-options{
+.navlist{
     display: flex;
     list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
 }
 
-.dropdown-options a{
-    text-decoration:none;
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
 }
 
-/*BIG ROCKET BOY*/
-/*20px is good for the 2 paragrapjs*/
+
+
+.nav-dropdown {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown > a{
+    text-decoration: none;
+    color:  white;
+}
+
+
+.nav img{
+    height: 45px;
+    justify-content: left;
+}
+
+/*TESTING HOVER HIGHLIGHT having trouble to get the animation across the board*/
+
+.navlist a:hover {
+    color: white;
+    display: block;
+}
+.navlist a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 100%;
+
+    bottom: 0;
+    height: 2px;
+    background-color: white;
+}
+.navlist a:hover::before {
+    right: 0;
+    left: 0;
+}
+
+
+
+
+/*Below works for only the Products side */
+
+.nav a:hover {
+    color: white;
+    display: block;
+}
+.nav a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 100%;
+
+    bottom: 0;
+    height: 2px;
+    background-color: white;
+}
+.nav a:hover::before {
+    right: 0;
+    left: 0;
+}
+
+
+
+
+/*end hover animation */
+
+.nav > a {
+color: #fff;
+margin: 0 40px;
+text-decoration: none;
+font-family: 'Poppins', sans-serif;
+transition: opacity 0.2s ease-in-out;
+}
+
+.nav-dropdown:hover > .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3a3633;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.menu-list li a{
+    text-decoration: none;
+    color:white;
+}
+
+.menu-list {
+    margin: 0;
+    padding: 0;
+}
+  
+.menu-list > li {
+    list-style-type: none;
+    padding: 20px;
+}
+.menu-list > li:hover {
+    background-color: lightgray;
+}
+
+.dropdown-menu
+
+
+/*change below to put the highlight animation for the selections nav*/
+
+.nav > a:hover {
+    opacity: 0.5;
+}
+
+
+/*BIG ROCKET BOY TAXI DONT TOUCH!*/
 
 .centerpiece{
     background-image: url(../imgs/bg.jpg);
@@ -35,8 +165,9 @@ body{
 
 .bothhalves{
     display: flex;
-    padding:280px;
     width: 768px;
+    align-content: center;
+    padding-left: 550px;
 }
 
 .lefthalf{
@@ -80,111 +211,104 @@ body{
 
 /*Features Section */
 
-.allfeat{
-    display:flex;
-    justify-content: center;
+.block img{
+    height:50px;
+}
+.blocks{
     text-align: center;
+    padding: 100px;
+    margin-left: 8%;
+    margin-right: 8%;
 }
-
-.featurecontent{
-    display: flex;
-    justify-content: center;
-    padding: 0px 0;
+.block p{
+    color: rgb(94, 88, 88);
+    padding: 15px;
 }
-
-.feature p{
-    height: 150px;
-    color: gray;
+.block{
+    border: 1px solid lightgrey;
+    box-shadow: 2px lightgray;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px;
+}
+@media (min-width: 768px) {
+    .blocks {display: flex;
+    }
+}
+.block button{
+    background: rgb(59, 56, 56);
+    color: white;
+    width: 100%;
     text-align: center;
-    margin: 30px;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
 }
-
-.feature{
-    width: 300px;
-    padding: 20px;
-    border:solid 1px lightgray;
-    margin: 15px;
-    border-radius: 15px;
-
-}
-
-.feature img{
-    height: 50px;
-}
-
-.feature header{
-    font-size: 20px;
-    font-weight: bold; 
-    padding: 20px;
-}
-
-.allbuttons{
-    color: #3a3633;
-}
-
 /*LOREM IPSUM WITH GRADIENT BLOCK(S)*/
 
-.blocks{
+.squares h2{
+    padding: 40px;
+    font-size: 50px;
     color: white;
 }
-
-.blocks header{
-    font-size: 100px;
+.htop{
+        background-color: #3a3633;
+        margin: 0px;
+        height: 10vh;
 }
 
-.grayblock{
-    margin-top: 25px;
-}
-.grayblock p{
-    font-size:20px;
+.hbottom{
+    margin: 0px;
+    padding: 0px;
 }
 
-
-
-.gradientblock{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,110,176,0) 0%, rgba(1,74,181,1) 100%);
-}
-
-.gradientblock{
-    height: 600px;
-}
-
-.gradientblock p{
-    text-align: right;
-    padding-right: 50px;
-    font-size: 30px;
-}
-.slickgradient{
-    text-align: right;
-    padding-top: 100px;
-    padding-right: 50px;
-}
-
-.grayblock{
-    padding-top: 100px;
-    
-}
-
-.slickgradient p{
-    text-align: right;
-    padding-top: 100px;
-    padding-right: 50px;
-
-}
-
-.animationblock{
-    padding-top: 100px;
-
-}
-
-
-.grayblock{
+.top p{
     background-color: #3a3633;
-    height: 600px;
+    margin: 0px;
+    height: 250px;
 }
 
+.bottom p{
+    margin: 0px;
+    height: 30vh;
+}
+.squares p{
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+.front p2{
+    color: white;
+    text-size-adjust: 5px;
 
+}
+.front{
+    position: absolute;
+    background-color: #3a3633;
+    border: 8px solid white;
+    width: 200px;
+    text-align: center;
+    padding: 5px 20px;
+    bottom: -1280px;
+    left:4%;
+
+}
+.bottom{
+    width: 100%;
+    text-align: right;
+    background-color: rgb(56, 156, 250);
+    background: linear-gradient(to right, white, rgb(56, 156, 250));
+}
+.front{
+    background-color: #3a3633;
+}
+.front, .p2{
+    padding: 20px;
+}
+.front h3{
+    font-size: 20px;
+    color: red;
+}
 /* PICTURES GRID */
 
 .gattopics{
@@ -257,15 +381,8 @@ input[type="email"] {
     color: black;
 }
 
-@media (max-width:768px)
-{
- /*   .gattopics img{
-        width: 100%;;
-    }*/
-    .allfeat{
-    display: inline-block;
-    position: relative
-}
+
+/* THIS BELOW LINE FOR THE LEGAL MEDIA */
 
 @media (max-width:768px)
 {
@@ -277,6 +394,8 @@ input[type="email"] {
     font-size: 0;
 }
 }
+
+/*MEDIA LINES FOR TAXI SPACESHIP */
 
 @media (max-width:768px)
 {
@@ -322,12 +441,35 @@ input[type="email"] {
 }
 }
 
+/*Gradient media*/
+
+@media (max-width:768px)
+{   .front{
+    background-color: #3a3633;
+    border: 8px solid white;
+    width: 200px;
+    text-align: center;
+    padding: 5px 20px;
+    bottom: -2820px;
+    left:20%;
+
+}
+
 @media (max-width:768px)
 {
+     p{
+        font-size: 30px;
+    }
+
+
     .grayblock p{
         font-size: 20px;
         padding-left: 20px;
 }
+
+    .slickgradient p{
+        padding-right:100px ;
+    }
 
     .blocks header{
         font-size: 30px;
@@ -335,7 +477,7 @@ input[type="email"] {
 }
 
     .gradientblock p{
-        padding-right: 20px;
+        padding-right: 50px;
     }
     .lefthalf{
         border: none;

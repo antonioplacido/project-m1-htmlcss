@@ -9,32 +9,28 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
 
-
-
   <body>
 
-<!Navbar>
+<!--Navbar-->
 
-
-    <nav class="nav-bar">
-      <nav class="nav-across">
-        <ul class="nav-across-options">
-        <li class="bar">Features</li>
-        <li class="bar">Advantages</li>
-        <li class="bar">Gallery</li>
-        <li class="bar-dropdown">Products</li>
-          <div class="dropdown-options">
-            <a href="#">Falcon 9</a>
-            <a href="#">Model S</a>
-            <a href="#">iPhone</a>
-        </ul>
+<nav class="nav">
+  <a href="#"><img src="imgs/logo.svg"></a>
+  <ul class="navlist">
+  <li><a href="#">Features</a></li>
+  <li><a href="#">Advantages</a></li>
+  <li><a href="#">Gallery</a></li>
+  <span class="nav-dropdown"><a href="#">Products</a>
+      <div class="dropdown-menu">
+        <ul class="menu-list">  
+          <li><a href="https://www.spacex.com/vehicles/falcon-9/">Falcon 9</li></a>
+          <li>Model S</li>
+          <li>iPhone</li>
       </ul>
-      <nav class="nav-dropdown">
-      </nav>
-      </ul>
-    </nav>
+      </div>
+  </span>
+</nav>
 
-<!Big Rocket section / Taxi example>
+<!--Big Rocket section / Taxi example  dont touch!-->
 
 <container class="introduction">
 <div class="centerpiece">
@@ -50,58 +46,76 @@
   </div>
 </container>
 
-<!Amazing features section>
+<!--Amazing features section-->
 
-<container class="featuresection">
-  <div class="featurecontent">
-    <div class="allfeat">
-    <div class="feature">
-    <img src="imgs/icon1.svg">
-    <header class="feat1head">Amazing feature 1
-    </header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. It enim ad minim veniam. Lorem upsum dolor sit amet.</p>
-      
-      <button type="button">Get it</button>
-    
+    <container class="blocks">
+      <div class="block">
+        <img src="imgs/icon1.svg" alt="icon"/>
+        <h3>
+          Amazing feature 1
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, adipisci vero eos iste nihil distinctio unde nobis voluptatum dolorem cum magnam recusandae, sunt laudantium necessitatibus id. Aliquid cupiditate aperiam dolore?
+        </p>
+        <button>
+          Get it
+        </button>
+      </div>
+      <div class="block">
+        <img src="imgs/icon2.svg" alt="icon"/>
+        <h3>
+          Amazing feature 2
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet. Officiis veritatis cum enim dolores amet, possimus voluptate magnam, quisquam velit ut magni suscipit alias modi nesciunt. Aut voluptate nobis eos id.
+        </p>
+        <button>
+          Sell it
+        </button>
+      </div>
+      <div class="block">
+      <img src="imgs/icon3.svg" alt="icon"/>
+      <h3>
+        Amazing feature 3
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis magnam minus quas in rerum dolores necessitatibus amet similique iusto. Saepe eveniet fugiat iste sint ullam dicta sit necessitatibus minima?
+      </p>
+      <button>
+        Do it
+      </button>
     </div>
-    <div class="feature">
-    <img src="imgs/icon2.svg">
-    <header class="feat2head">Amazing feature 2
-    </header>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.</p>
-      <button type="button">Sell it</button>
+    </container>
+<!--Some cool text to gradient-->
+
+<container class="squares">
+  <div class="top">
+    <h2 class="htop">
+      Some cool text
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel neque natus a consequatur libero, minus exercitationem quam consectetur, quaerat qui illum?
+    </p>
+    <div class="front">
+      <h3 class="hfront">
+        This looks cool
+      </h3>
+      <p2>
+        Hover me if you like random animations  <!-- this was an absolute pain for me, didnt bother attempting the animation-->
+      </p2>
     </div>
-    <div class="feature">
-    <img src="imgs/icon3.svg">
-    <header class="feat3head">Amazing feature 3
-    </header>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-      <button type="button">Do it</button>
-    </div>
-    </div>
-  </div> 
+  </div>
+  <div class="bottom">
+    <h2 class="hbottom">
+      Slick gradient
+    </h2>
+    <p>
+      Lorem ipsum?
+    </p>
+  </div>
 </container>
 
-
-<!Some cool text to gradient>
-
-<container class="blocks">
-  <div class="grayblock">
-    <header class="somecooltext">Some cool text</header>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, laudantium aliquid earum odit nostrum deleniti illum saepe quibusdam dolore sed nesciunt fuga reiciendis exercitationem facilis modi natus doloremque nobis velit!</p>
-    <div class="animationblock">
-      <header class="cool">This looks cool</header>
-        <p>Hover me if you like random animations</p>
-  </div>
-  </div>
-  <div class="gradientblock">
-    <header class="slickgradient">Slick gradient</header>
-      <p>Lorem ipsum?</p>
-  </div>
-
-</container>
-
-<!Cat Pictures>
+<!--Cat Pictures-->
   <div class="gattopics">
     <img src="imgs/tesla.jpg" alt="Gridpic"/>
     <img src="imgs/procat.jpg" alt="procat"/>
@@ -111,7 +125,7 @@
     <img src="imgs/funnycat.jpg" alt="funnycat"/>
   </div>
 
-<!Mailing List>
+<!--Mailing List-->
 
 <form class="mailingbox">
   <container label="mailinglist">
@@ -128,7 +142,7 @@
   </container>
 </form>
 
-<!FOOTER LIST>
+<!--FOOTER LIST-->
     <container class="legal">
       <ul class="legalclicks">
         <li class="legalOpt"><a href="#">About us</a></li>
